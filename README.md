@@ -17,7 +17,7 @@ You should run a base model that includes differential linear pre-trends.  Becau
 where time is indexed by t, the intervention begins at t=T, <a href="https://www.codecogs.com/eqnedit.php?latex=d_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d_i" title="d_i" /></a> is an indicator that an observation is in the treatment group, <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha_i" title="\alpha_i" /></a> is a unit fixed effect, <a href="https://www.codecogs.com/eqnedit.php?latex=\gamma_t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\gamma_t" title="\gamma_t" /></a> is a time fixed effect.  The average treatment effect is <a href="https://www.codecogs.com/eqnedit.php?latex=\beta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\beta" title="\beta" /></a>.
 
 ## But I said I believe trends are parallel.  Why should I include differential trends?
-If trends are parallel, your treatment effect is still unbiased.  If there are small (but substantively unimportant) trend differences, this specification reduces bias.
+If trends are parallel, your treatment effect is still unbiased.  If there are small trend differences, this specification reduces bias.
 
 ## But won't this hurt power?  What if I only have a few pre-periods?
 We show in our paper that power to detect a treatment effect in a model with differential linear pre-trends is roughly the same as power to rule out a violation of parallel trends the same size as your treatment effect.  If you can no longer detect your effect in a more complex model, you probably couldn't provide much statistical evidence about the parallel trends assumption.
@@ -32,7 +32,7 @@ Our approach can do this either as a difference or ratio between treatment effec
 (See our paper for more discussion on choosing a threshold.  If you would only report results if they fell within this threshold, you can adjust your standard errors to reflect this.). 
 
 ## Actually, my trends don't seem very parallel.  Or maybe I believed they weren't parallel from the start.  What next?
-You can choose an alternative data-generating process, like (parallel growth)[https://blogs.worldbank.org/impactevaluations/often-unspoken-assumptions-behind-difference-difference-estimator-practice].  If you do this, you should present your base treatment effect estimate from a model with more complex data-generating process, like a restricted cubic spline.  You can then compare treatment effects in this model vs parallel growth. 
+You can choose an alternative data-generating process, like [parallel growth](https://blogs.worldbank.org/impactevaluations/often-unspoken-assumptions-behind-difference-difference-estimator-practice).  If you do this, you should present your base treatment effect estimate from a model with more complex data-generating process, like a restricted cubic spline.  You can then compare treatment effects in this model vs parallel growth. 
 
 You could also model potential mechanisms for differential trends as time-varying covariates and see if this explains so of the difference you see.  You might not have enough power to say much about the parallel trends assumption.  That's okay, as long as this isn't translated into "passing" a parallel trends test.
 
