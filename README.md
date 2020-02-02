@@ -1,4 +1,4 @@
-# Why You Shouldn't Test for Parallel Pre-trends: A Non-Inferiority Approach to Difference-in-Differences
+# Don't Test for Parallel Pre-trends: A Non-Inferiority Approach to Difference-in-Differences
 
 In this vignette, we walk through implementing a non-inferiority approach to difference-in-differences, as described in [Bilinski and Hatfield (2019)](https://arxiv.org/abs/1805.03273).  R code is under construction but available on request.  For more about diff-in-diff, you can also visit the Health Policy Data Science Lab's [website](https://diff.healthpolicydatascience.org/).
 
