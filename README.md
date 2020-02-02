@@ -44,4 +44,4 @@ We make two main plots.  First, we like a standard plot that shows us the unadju
 
 We also recommend an event-study plot.   This type of plot estimates a “treatment effect” at each time point relative to the last time point before the intervention. It thus illustrates pre-intervention trends, adjusted for covariates in the model. Our preferred version of the event-study plot extrapolates pre-intervention trends into the post-intervention period, alowing readers to visualize the impact of potential trend differences and think through the reasonableness of extrapolations.  (The example below is from our paper.)
 
-![img](https://github.com/abilinski/NonInfDID/blob/master/esp_reformatted.png?style=centerme)
+![img](https://github.com/abilinski/Non-Inf-DID/blob/master/esp_reformatted.png?style=centerme)
