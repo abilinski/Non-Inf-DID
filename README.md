@@ -1,6 +1,6 @@
 # Don't Test Pre-trends: A Non-Inferiority Approach to Difference-in-Differences
 
-In this vignette, we walk through implementing a non-inferiority approach to difference-in-differences, as described in [Bilinski and Hatfield (2019)](https://arxiv.org/abs/1805.03273).  R code is under construction and available on request.  For more about diff-in-diff, you can also visit the Health Policy Data Science Lab's [website](https://diff.healthpolicydatascience.org/).
+In this vignette, we walk through implementing a non-inferiority approach to difference-in-differences, as described in [Bilinski and Hatfield (2019)](https://arxiv.org/abs/1805.03273).  R code is under construction and available on request ([abilinskiATg.harvard.edu](abilinski@g.harvard.edu)).  For more about diff-in-diff, you can also visit the Health Policy Data Science Lab's [website](https://diff.healthpolicydatascience.org/).
 
 ## I thought I should test whether pre-trends are parallel.  You're telling me not to?
 In many cases, a traditional parallel trends test has low power and conflates this with "no violation" of the parallel trends assumption.  But if you're well-powered, you might see a significant trend difference when it is unimportant.  Testing for pre-trends is not a reliable indicator of meaningful violations, either when a significant effect is observed or not.
