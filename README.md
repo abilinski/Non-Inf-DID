@@ -37,7 +37,7 @@ You can choose an alternative data-generating process, like [parallel growth](ht
 You could also model potential mechanisms for differential trends as time-varying covariates and see if this explains so of the difference you see.  You might not have enough power to say much about the parallel trends assumption.  That's okay, as long as this isn't translated into "passing" a parallel trends test.
 
 ## My intervention has staggered start times.  How do I incorporate this?
-This is an area of active research.  [This page](https://andrewcbaker.netlify.com/2019/09/25/difference-in-differences-methodology/) does a great job of summarizing different approaches, and most estimators can be adapted to allow for trend differences. 
+This is an area of active research.  [This page](https://andrewcbaker.netlify.com/2019/09/25/difference-in-differences-methodology/) does a great job of summarizing different approaches, and most estimators can be adapted to allow for trend differences. For example, if implementing Abraham and Sun (2019)'s cohort-based approach, researchers can simply add cohort-specific trends and then apply the non-inferiority estimator as outlined the paper.
 
 ## What plots help me in all of this?
 We make two main plots.  First, we like a standard plot that shows us the unadjusted treatment and comparison groups.  This gives us a general sense of the data and tells us a bit about how levels vary between treatment and comparison groups.
